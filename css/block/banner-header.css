@@ -1,0 +1,217 @@
+.bg-banner-header {
+    background: no-repeat url(../../img/bg-img-banner.png);
+    background-size: cover;
+    background-position: -270px 0px;
+}
+
+.banner-header {
+    position: relative;
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+
+.banner-header img {
+    display: inline-block;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-header .banner-info {
+    padding-left: -15px;
+    box-sizing: border-box;
+}
+
+.block-tringle,
+.discount {
+    filter: drop-shadow(2px 3px 4px grey);
+}
+
+.block-tringle h1 {
+    background-color: #caddea;
+    border-radius: 4px;
+    padding: 10px 0 10px 40px;
+    color: #1b7fd0;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-family: 'r-bold';
+    display: inline-block;
+    position: relative;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.tringle {
+    width: 0;
+    height: 0;
+    border-top: 30px solid #caddea;
+    border-right: 30px solid transparent;
+    bottom: -27px;
+    position: absolute;
+}
+
+.banner-info h3 {
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-family: 'r-medium';
+    padding-left: 40px;
+    padding-top: 35px;
+}
+
+.banner-info ul {
+    list-style-type: none;
+    margin-bottom: 30px;
+    padding-left: 55px;
+    padding-right: 40px;
+}
+
+.banner-info li {
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-size: 19px;
+    line-height: 24px;
+    font-family: Arial Narrow, Helvetica, sans-serif;
+    padding-bottom: 10px;
+}
+
+.banner-info li::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    top: 9px;
+    left: -25px;
+    background-color: #1b7fd0;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.features-banner {
+    justify-content: space-around;
+    margin-left: 5px;
+}
+
+.features-banner a {
+    border: 1px solid;
+    margin-bottom: 15px;
+    text-align: center;
+    line-height: 35px;
+    font-family: 'r-regular';
+    font-size: 18px;
+    padding: 0px 5px;
+}
+
+.features-banner a:active {
+    transform: scale(0.9);
+    transition: 0.2s;
+}
+
+.discount {
+    margin-bottom: 40px;
+}
+
+.discount p {
+    text-align: center;
+    background-color: #caddea;
+    border-radius: 4px;
+    margin-bottom: 0;
+    color: #075da2;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'r-regular';
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.number-red {
+    font-size: 34px;
+    color: #dd0000;
+    font-family: 'r-bold';
+}
+
+.red-uppercase {
+    color: #dd0000;
+    font-size: 26px;
+}
+
+@media (max-width: 1350px) {
+    .bg-banner-header {
+        background-position: -350px 0px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .bg-banner-header {
+        background-position: -500px 0px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .features-banner a {
+        font-size: 17px;
+    }
+
+    .bg-banner-header {
+        background-position: -545px 0px;
+    }
+}
+
+@media (max-width: 885px) {
+    .bg-banner-header {
+        background-position: -644px 0px;
+    }
+}
+
+@media (max-width: 767px) {
+    .bg-banner-header {
+        background: url(../../img/Bg-top-header.png) #f4f6fa no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-position: 0px -300px;
+    }
+
+    .features-banner {
+        margin-left: 0px;
+    }
+
+    .banner-info ul {
+        padding-right: 0px;
+    }
+}
+
+@media (max-width: 574px) {
+    .banner-info {
+        padding: 5px 15px;
+    }
+
+    .block-tringle h1 {
+        font-size: 24px;
+        padding-left: 15px;
+        line-height: 22px;
+    }
+
+    .tringle {
+        bottom: -20px;
+    }
+
+    .banner-info h3 {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        font-family: 'r-medium';
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    .banner-info ul {
+        list-style-type: none;
+        margin-bottom: 30px;
+        padding-left: 25px;
+        padding-right: 5px;
+        font-size: 18px;
+    }
+}

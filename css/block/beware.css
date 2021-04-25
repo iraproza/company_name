@@ -1,0 +1,252 @@
+.bg-beware {
+    background: url(../../img/Bg-top-header.png) #f4f6fa no-repeat;
+    background-position: bottom;
+    background-position: 0px 350px;
+}
+
+.beware {
+    padding: 50px 0px;
+}
+
+.beware-info {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.list-title {
+    border-radius: 0px;
+}
+
+.list-title-group {
+    padding-right: 0px;
+}
+
+
+.beware-info a,
+.bawere-list-mb {
+    font-family: 'r-medium';
+    font-size: 18px;
+    line-height: 22px;
+    color: #1b7fd0;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    background-color: transparent;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0;
+    border-top: 2px;
+    border-radius: 0px;
+    position: relative;
+    display: flex;
+    padding-left: 50px;
+    align-items: center;
+    padding-right: 5px;
+    transition: font-size 0.2s;
+    min-height: 90px;
+}
+
+.beware-info a:focus {
+    font-size: 22px;
+}
+
+.beware-info a:hover {
+    background-color: transparent;
+}
+
+.beware-info .list-title-group .active:hover {
+    background-color: #075da2;
+    ;
+}
+
+.beware-info a span,
+.bawere-list-mb span {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    font-family: 'raj-bold';
+    font-size: 60px;
+    color: #caddea;
+}
+
+.beware-info a::after {
+    content: '';
+    height: 101%;
+    width: 10px;
+    background: #075da2;
+    position: absolute;
+    right: -10px;
+    display: none;
+    top: 0px;
+}
+
+.beware-info a::before {
+    content: "";
+    height: 101%;
+    width: 0;
+    position: absolute;
+    right: -30px;
+    top: 0px;
+    border-top: 45px solid transparent;
+    border-left: 20px solid #075da2;
+    border-bottom: 45px solid transparent;
+    display: none;
+}
+
+.list-group-item.active::after,
+.list-group-item.active::before {
+    display: block;
+}
+
+
+.list-title-group .list-group-item.active {
+    background-color: #075da2;
+    font-size: 22px;
+}
+
+.description-list {
+    font-family: Arial Narrow, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #0983e5;
+    line-height: 24px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.beware-content .description-guarant {
+    text-align: justify;
+    font-family: Arial Narrow, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.beware-content .active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    min-height: 540px;
+    background-color: #ffffff;
+    box-shadow: 2px 3px 4px grey;
+}
+
+.block-2 {
+    padding-left: 15px;
+}
+
+
+.block-order-bt {
+    justify-content: center;
+}
+
+.bawere-list-mb {
+    min-height: 60px;
+    text-align: left;
+    text-decoration: none;
+    padding: 10px 15px 10px 60px;
+    width: 100%;
+    position: relative;
+}
+
+.bawere-list-mb span {
+    position: absolute;
+    top: 40%;
+    left: 15px;
+    font-family: 'raj-bold';
+    font-size: 60px;
+    color: #caddea;
+}
+
+.card-name {
+    padding: 0px;
+}
+
+.bawere-list-mb:hover {
+    text-decoration: none;
+    color: #495057;
+}
+
+.bawere-list-mb:not(.collapsed) {
+    cursor: pointer;
+    background: #075da2;
+    color: #ffffff;
+    border-bottom: 5px solid #075da2;
+    
+}
+
+.bawere-list-mb:not(.collapsed)::before {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: 45%;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 20px solid #075da2;
+}
+
+
+.icon-mb {
+    display: flex;
+    justify-content: center;
+}
+
+.description-mb {
+    font-size: 16px;
+    min-height: 100px;
+    padding: 0px;
+}
+
+@media (max-width: 992px) {
+    .tringle-red-mb {
+        bottom: -14px;
+    }
+    .list-accordion{
+        margin-bottom: 15px;
+    }
+        
+}
+
+@media (max-width: 500px) {
+   .bawere-list-mb {
+       min-height: 50px;
+   }
+    .icon-container::after {
+        content: '';
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        background-color: #caddea;
+        position: absolute;
+        z-index: 0;
+    }
+
+    .icon-container svg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 65px;
+        fill: #1b7fd0;
+        z-index: 1;
+    }
+
+    .bawere-list-mb:not(.collapsed)::before {
+        left: 43%;
+    }
+
+    .title-section {
+        font-size: 22px;
+    }
+
+    .beware {
+        padding-top: 25px;
+    }
+}
+
+@media (max-width: 375px) {
+    .bawere-list-mb:not(.collapsed)::before {
+        bottom: -22%;
+        left: 42%;
+    }
+}

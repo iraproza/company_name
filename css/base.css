@@ -1,0 +1,24 @@
+@font-face{
+    font-family: 'r-light';
+    src: url(../fonts/Roboto-Light.woff);
+}
+
+@font-face{
+    font-family: 'r-regular';
+    src: url(../fonts/Roboto-Regular.woff);
+}
+
+@font-face{
+    font-family: 'r-medium';
+    src: url(../fonts/Roboto-Medium.woff);
+}
+
+@font-face{
+    font-family: 'r-bold';
+    src: url(../fonts/Roboto-Bold.woff);
+}
+
+@font-face{
+    font-family: 'raj-bold';
+    src: url(../fonts/Rajdhani-Bold.ttf);
+}

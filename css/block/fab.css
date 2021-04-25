@@ -1,0 +1,100 @@
+.fab{
+    position: fixed;
+    z-index: 5;
+}
+
+.fab-up{
+    right: 35px;
+    bottom: 35px;
+}
+
+.fab-3{
+    position: absolute;
+    right: 10%;
+    top: 200px;
+}
+
+.container-fab{
+    display: flex;
+    justify-content: center;
+    width: 55px;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.arrow span{
+    color: #ffffff;
+    position: absolute;
+    top: 9px;
+    right: 4px;
+    z-index: 8;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.arrow:focus span,
+.arrow:hover span{
+    color: #caddea;
+    transition: 0.2s;
+}
+
+.container-fab:focus {
+    outline:none;
+}
+
+.container-fab:focus::after,
+.container-fab:hover::after{
+    background-color: #013056;
+    transition: 0.2s;
+}
+
+.container-fab:focus svg,
+.container-fab:hover svg{
+    fill: #caddea;
+    transition: 0.2s;
+}
+
+.container-fab:focus::before,
+.container-fab:hover::before{
+    background-color: #caddea;
+    transition: 0.2s;
+}
+
+.container-fab svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 60px;
+    fill: #ffffff;
+    z-index: 1;
+    padding-left: 2px;
+}
+
+.up{
+    transform: rotate(90deg);
+}
+
+.container-fab::after {
+    content: '';
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #1b7fd0;
+    position: absolute;
+    z-index: 0;
+}
+
+.container-fab::before {
+    content: '';
+    width: 69px;
+    height: 69px;
+    top: -2px;
+    border-radius: 50%;
+    background-color: #c4dcf1;
+    position: absolute;
+    z-index: 0;
+}
